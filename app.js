@@ -11,6 +11,7 @@ app.use(express.static('public'));
 //Templating Engine
 app.use(expressLayout);
 app.set('layout', './layouts/main');
+// set the view engine to ejs
 app.set('view engine', 'ejs');
 
 app.use('/', require('./server/routes/main'));
