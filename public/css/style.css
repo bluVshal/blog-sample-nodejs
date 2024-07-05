@@ -12,6 +12,7 @@
     --font-size-xl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
     --border-radius: 10px;
     --font-fam: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --font-fam-hov: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body{
@@ -63,9 +64,8 @@ a{
 }
 
 a:hover{
-    background-color:#1c1c1c;
-    color: ivory;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:lightgray;
+    font-family:var(--font-fam-hov);
 }
 
 /* Layout */
@@ -120,4 +120,15 @@ a:hover{
     grid-area: button;
     display: flex;
     justify-content: end;
+}
+
+.search__btn {
+    width: 18%;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: var(--font-fam);
+}
+
+.search__btn:hover{
+    font-family:var(--font-fam-hov);
 }
